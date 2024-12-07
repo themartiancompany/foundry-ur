@@ -56,7 +56,7 @@ _url="${_http}/${_ns}/${_pkg}"
 _tag_name="commit"
 _tag="${_commit}"
 _tarname="${_pkg}-${_tag}"
-_src="git+${_tarname}::${_url}.git#${_tag_name}=${_tag}"
+_src="${_tarname}::git+${_url}.git#${_tag_name}=${_tag}"
 source=(
   "${_src}"
 )
