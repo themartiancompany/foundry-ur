@@ -71,6 +71,8 @@ _target_get() {
   if [[ "${_os}" == "Android" ]]; then
     _target="${CARCH}-linux-androideabi"
   fi
+  echo \
+    "${_target}"
 }
 
 prepare() {
