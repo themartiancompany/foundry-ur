@@ -67,6 +67,7 @@ sha512sums=(
 _target_get() {
   local \
     _target 
+  _target="${CARCH}-unknown-linux-gnu"
   if [[ "${_os}" == "Android" ]]; then
     _target="${CARCH}-linux-androideabi"
   fi
